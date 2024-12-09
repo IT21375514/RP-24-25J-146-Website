@@ -119,9 +119,9 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div class="footer-foreground">
-                  <div class="footercontainer">
-                    <div class="footer-avatar-container">
+                <div className="footer-foreground">
+                  <div className="footercontainer">
+                    <div className="footer-avatar-container">
                       <img
                         src={footerImg}
                         alt="animation-head"
@@ -134,11 +134,11 @@ export const Contact = () => {
                       <div  className={`${
                           isVisible ? "animate__animated animate__zoomIn" : ""
                         } footer-avatar-face`}>
-                        <div class="footer-avatar-eye footer-left-eye">
-                          <div class="footer-pupil"></div>
+                        <div className="footer-avatar-eye footer-left-eye">
+                          <div className="footer-pupil"></div>
                         </div>
-                        <div class="footer-avatar-eye footer-right-eye">
-                          <div class="footer-pupil"></div>
+                        <div className="footer-avatar-eye footer-right-eye">
+                          <div className="footer-pupil"></div>
                         </div>
                       </div>
                     </div>

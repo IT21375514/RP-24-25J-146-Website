@@ -87,20 +87,20 @@ export const Footer = () => {
             className="text-sm-start footer-logo"
           >
             <img src={logo} alt="Logo" />
-            <div class="info">
+            <div className="info">
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
+              <div className="email">
+                <i className="bi bi-envelope"></i>
                 <p>sanjayan201@gamil.com</p>
               </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
+              <div className="phone">
+                <i className="bi bi-phone"></i>
                 <p>+94 76 162 2337</p>
               </div>
 
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
+              <div className="address">
+                <i className="bi bi-geo-alt"></i>
                 <p>3, Hubert Place, Modera, Colombo-15, Sri Lanka</p>
               </div>
 

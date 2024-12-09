@@ -1595,7 +1595,7 @@ position: relative;
     margin: 24px auto 24px auto;
   }
 
-  .project button {
+  .project .proj-txtx button {
     font-weight: 700;
     color: #000;
     background-color: #fff;
@@ -1606,14 +1606,14 @@ position: relative;
     position: relative;
     transition: 0.3s ease-in-out;
   }
-  .project button span {
+  .project .proj-txtx button span {
     z-index: 1;
     position: relative;
   }
-  .project button:hover {
+  .project .proj-txtx button:hover {
     color: #fff;
   }
-  .project button::before {
+  .project .proj-txtx button::before {
     content: "";
     background: #121212;
     width: 0;
@@ -1624,7 +1624,7 @@ position: relative;
     z-index: 0;
     transition: 0.3s ease-in-out;
   }
-  .project button:hover::before {
+  .project .proj-txtx button:hover::before {
     width: 100%;
   }
   
