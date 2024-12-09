@@ -4,6 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import footerImg from "../assets/img/footer-avatar-sanjayan.png";
+import DOMPurify from "dompurify";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -16,18 +17,43 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const [errors, setErrors] = useState({});
 
   const onFormUpdate = (category, value) => {
+    // Sanitize input to prevent XSS
+    const sanitizedValue = DOMPurify.sanitize(value);
     setFormDetails({
       ...formDetails,
-      [category]: value,
+      [category]: sanitizedValue,
     });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!formDetails.firstName) {
+      newErrors.firstName = "First name is required.";
+    }
+    if (!formDetails.email || !emailPattern.test(formDetails.email)) {
+      newErrors.email = "Valid email address is required.";
+    }
+    if (!formDetails.message) {
+      newErrors.message = "Message is required.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) {
+      return;
+    }
+
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch(`${process.env.MAIL_APP_API_URL}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -37,11 +63,11 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
+    if (result.code === 200) {
+      setStatus({ success: true, message: "Message sent successfully" });
     } else {
       setStatus({
-        succes: false,
+        success: false,
         message: "Something went wrong, please try again later.",
       });
     }
@@ -131,9 +157,11 @@ export const Contact = () => {
                         id="footer-wala-avatar"
                       />
 
-                      <div  className={`${
+                      <div
+                        className={`${
                           isVisible ? "animate__animated animate__zoomIn" : ""
-                        } footer-avatar-face`}>
+                        } footer-avatar-face`}
+                      >
                         <div className="footer-avatar-eye footer-left-eye">
                           <div className="footer-pupil"></div>
                         </div>
@@ -167,11 +195,14 @@ export const Contact = () => {
                             onFormUpdate("firstName", e.target.value)
                           }
                         />
+                        {errors.firstName && (
+                          <p className="error-text">{errors.firstName}</p>
+                        )}
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
-                          value={formDetails.lasttName}
+                          value={formDetails.lastName}
                           placeholder="Last Name"
                           onChange={(e) =>
                             onFormUpdate("lastName", e.target.value)
@@ -187,6 +218,9 @@ export const Contact = () => {
                             onFormUpdate("email", e.target.value)
                           }
                         />
+                        {errors.email && (
+                          <p className="error-text">{errors.email}</p>
+                        )}
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
@@ -198,7 +232,7 @@ export const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} className="px-1">
+                      <Col size={12} sm={12} className="px-1">
                         <textarea
                           rows="6"
                           value={formDetails.message}
@@ -207,14 +241,12 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <div className="submit-button-container">
-                        <button className="submit-button" type="submit">
-                          <span>{buttonText}</span>
-                        </button>
-                        </div>
+                        {errors.message && (
+                          <p className="error-text">{errors.message}</p>
+                        )}
                       </Col>
                       {status.message && (
-                        <Col>
+                        <Col size={12} sm={12} className="px-1">
                           <p
                             className={
                               status.success === false ? "danger" : "success"
@@ -224,6 +256,13 @@ export const Contact = () => {
                           </p>
                         </Col>
                       )}
+                      <Col size={12} sm={12} className="px-1">
+                        <div className="submit-button-container">
+                          <button className="submit-button" type="submit">
+                            <span>{buttonText}</span>
+                          </button>
+                        </div>
+                      </Col>
                     </Row>
                   </form>
                 </div>

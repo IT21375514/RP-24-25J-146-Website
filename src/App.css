@@ -105,16 +105,23 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
-}
 
 @media (max-width: 992px) {
   .container {
     max-width: 90%!important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 90%!important;
+  }
+}
+
+@media (min-width: 1400px) {
+  main .container {
+    max-width: 1400px!important;
+    padding: 0 150px;
   }
 }
 
@@ -629,7 +636,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 10px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -655,6 +662,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+.error-text {
+  color: red;
+  margin-top: 4px;
+}
+
 
 /************ Footer Css ************/
 .footer {
@@ -1295,7 +1308,7 @@ position: relative;
 /*Skills*/
 
 .rfm-marquee-container{
-  overflow-x:visible;
+  /* overflow-x:visible; */
   padding-top:10px;
   padding-bottom: 10px;
 }
@@ -1312,13 +1325,24 @@ position: relative;
   border-radius: 10%;
 }
 
+.custom-image-caption {
+  position: absolute;
+  background-color: rgba(4, 21, 40, 0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 0;
+  font-size: 20px;
+  z-index: 1051;
+  margin-right: 40px;
+}
+
 .custom-close-button {
   position: absolute;
   right: 0;
   background-color: #041528;
   color: #fff;
   border: none;
-  border-radius: 10%;
+  border-radius: 0%;
   width: 40px;
   height: 40px;
   display: flex;
@@ -1358,6 +1382,7 @@ position: relative;
 .carousel-control-next, .carousel-control-prev{
   width: auto!important;
 }
+
 
 /*Texts*/
 
