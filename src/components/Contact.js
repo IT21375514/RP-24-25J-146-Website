@@ -53,7 +53,7 @@ export const Contact = () => {
     }
 
     setButtonText("Sending...");
-    let response = await fetch(`${process.env.MAIL_APP_API_URL}/contact`, {
+    let response = await fetch("https://sanjayan-portfolio-email-service.vercel.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -104,8 +104,7 @@ export const Contact = () => {
     };
   
     const mouseMove = (event) => {
-      let pupilRangeX = getPupilRangeX(); // Dynamically calculate pupilRangeX
-      console.log("Current pupilRangeX:", pupilRangeX);
+      let pupilRangeX = getPupilRangeX();
   
       currentXPosition = event.clientX - mouseXStartPoint;
       fracXValue = currentXPosition / mouseXRange;
