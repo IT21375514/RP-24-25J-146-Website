@@ -281,11 +281,11 @@ export const Contact = () => {
                           </p>
                         </Col>
                       )}
-                      <Col size={12} sm={12} className="px-1">
+                      <Col xs={12} sm={12} lg={6} className="px-1">
                         <div id="recaptcha-container"></div>
                         {errors.recaptcha && <p className="error-text">{errors.recaptcha}</p>}
                       </Col>
-                      <Col size={12} sm={12} className="px-1">
+                      <Col xs={12} sm={12} lg={6} className="px-1">
                         <div className="submit-button-container">
                           <button className="submit-button" type="submit">
                             <span>{buttonText}</span>
