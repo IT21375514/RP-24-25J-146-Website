@@ -56,32 +56,46 @@ export const Contact = () => {
     }
 
     setButtonText("Sending...");
-    let response = await fetch("https://sanjayan-portfolio-email-service.vercel.app/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify({ ...formDetails, recaptchaToken }),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong, please try again later.",
+    try {
+      const response = await fetch("https://sanjayan-portfolio-email-service.vercel.app/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify({ ...formDetails, recaptchaToken }),
       });
+      const result = await response.json();
+      setButtonText("Send");
+      setFormDetails(formInitialDetails);
+
+      if (result.code === 200) {
+        setStatus({ success: true, message: "Message sent successfully" });
+      } else {
+        setStatus({ success: false, message: "Something went wrong, please try again later." });
+      }
+    } catch (error) {
+      setStatus({ success: false, message: "An error occurred. Please try again later." });
     }
   };
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.google.com/recaptcha/api.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
+    const loadRecaptcha = () => {
+      const script = document.createElement("script");
+      script.src = "https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    };
+
+    window.onRecaptchaLoad = () => {
+      window.grecaptcha.render("recaptcha-container", {
+        sitekey: "6LeLUZcqAAAAAN6W1duz9EXbw3nvSxKp7-TIc1gM",
+        callback: (token) => setRecaptchaToken(token),
+        "expired-callback": () => setRecaptchaToken(""),
+      });
+    };
+
+    loadRecaptcha();
   }, []);
 
 
@@ -268,16 +282,8 @@ export const Contact = () => {
                         </Col>
                       )}
                       <Col size={12} sm={12} className="px-1">
-                        {/* reCAPTCHA Widget */}
-                        <div
-                          className="g-recaptcha"
-                          data-sitekey="6LeLUZcqAAAAAN6W1duz9EXbw3nvSxKp7-TIc1gM"
-                          data-callback={(token) => setRecaptchaToken(token)}
-                          data-expired-callback={() => setRecaptchaToken("")}
-                        ></div>
-                        {errors.recaptcha && (
-                          <p className="error-text">{errors.recaptcha}</p>
-                        )}
+                        <div id="recaptcha-container"></div>
+                        {errors.recaptcha && <p className="error-text">{errors.recaptcha}</p>}
                       </Col>
                       <Col size={12} sm={12} className="px-1">
                         <div className="submit-button-container">
