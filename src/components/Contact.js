@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import footerImg from "../assets/img/footer-avatar-sanjayan.png";
@@ -18,6 +17,7 @@ export const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
   const [errors, setErrors] = useState({});
+  const [recaptchaToken, setRecaptchaToken] = useState(""); 
 
   const onFormUpdate = (category, value) => {
     // Sanitize input to prevent XSS
@@ -41,6 +41,9 @@ export const Contact = () => {
     if (!formDetails.message) {
       newErrors.message = "Message is required.";
     }
+    if (!recaptchaToken) {
+      newErrors.recaptcha = "Please complete the reCAPTCHA.";
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -58,7 +61,7 @@ export const Contact = () => {
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
-      body: JSON.stringify(formDetails),
+      body: JSON.stringify({ ...formDetails, recaptchaToken }),
     });
     setButtonText("Send");
     let result = await response.json();
@@ -72,6 +75,15 @@ export const Contact = () => {
       });
     }
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
 
   useEffect(() => {
     let Pupils = document.getElementsByClassName("footer-pupil");
@@ -255,6 +267,18 @@ export const Contact = () => {
                           </p>
                         </Col>
                       )}
+                      <Col size={12} sm={12} className="px-1">
+                        {/* reCAPTCHA Widget */}
+                        <div
+                          className="g-recaptcha"
+                          data-sitekey="6LeLUZcqAAAAAN6W1duz9EXbw3nvSxKp7-TIc1gM"
+                          data-callback={(token) => setRecaptchaToken(token)}
+                          data-expired-callback={() => setRecaptchaToken("")}
+                        ></div>
+                        {errors.recaptcha && (
+                          <p className="error-text">{errors.recaptcha}</p>
+                        )}
+                      </Col>
                       <Col size={12} sm={12} className="px-1">
                         <div className="submit-button-container">
                           <button className="submit-button" type="submit">
