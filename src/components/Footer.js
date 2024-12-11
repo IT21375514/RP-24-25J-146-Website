@@ -16,17 +16,23 @@ export const Footer = () => {
             <div className="info">
               <div className="email">
                 <i className="bi bi-envelope"></i>
-                <p>sanjayan201@gamil.com</p>
+                <a href="mailto:sanjayan201@gmail.com">sanjayan201@gmail.com</a>
               </div>
 
               <div className="phone">
                 <i className="bi bi-phone"></i>
-                <p>+94 76 162 2337</p>
+                <a href="tel:+94761622337">+94 76 162 2337</a>
               </div>
 
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
-                <p>3, Hubert Place, Modera, Colombo-15, Sri Lanka</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=3+Hubert+Place+Modera+Colombo-15+Sri+Lanka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  3, Hubert Place, Modera, Colombo-15, Sri Lanka
+                </a>
               </div>
             </div>
           </Col>
