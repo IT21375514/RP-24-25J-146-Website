@@ -26,7 +26,7 @@ export const Bio = () => {
                         <div className="bio-image-shadow">
                           <img
                             src={profile}
-                            alt="Bio Image"
+                            alt="Sanjayan Chanthirasegaran - Full-Stack Developer"
                             className="bio-image"
                           />
                         </div>
