@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="sanjayan-favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/sanjayan-favicon.ico" sizes="64x64 32x32 24x24 16x16" type="image/x-icon" />
+    <meta
+      name="msapplication-TileImage"
+      content="%PUBLIC_URL%/sanjayan-favicon.ico"
+    />
+    <meta name="application-name" content="Sanjayan Chanthirasegaran" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -13,12 +18,12 @@
       name="keywords"
       content="Sanjayan Chanthirasegaran, Sanjayan, portfolio, Sri Lanka, Colombo, software engineer, full-stack developer, web development, web design, portfolio, programming, Java, JavaScript, React, Node.js, CSS, HTML"
     />
-    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,7 +33,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Sanjayan Chanthirasegaran | Web Developer, Web Designer, Android Developer, Sri Lanka</title>
+    <title>
+      Sanjayan Chanthirasegaran | Web Developer, Web Designer, Android
+      Developer, Sri Lanka
+    </title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sanjayan Chanthirasegaran",
+        "url": "https://sanjayan.vercel.app",
+        "image": "https://sanjayan.vercel.app/sanjayan-favicon.ico"
+      }
+      </script>
+    <meta
+      property="og:title"
+      content="Sanjayan Chanthirasegaran | Web Developer, Web Designer, Android Developer, Sri Lanka"
+    />
+    <meta
+      property="og:description"
+      content="Sanjayan Chanthirasegaran's portfolio, showcasing expertise in software engineering, full-stack development, web design and development, java, .net, javascript, react, node."
+    />
+    <meta
+      property="og:image"
+      content="https://sanjayan.vercel.app/sanjayan-favicon.ico"
+    />
+    <meta property="og:url" content="https://sanjayan.vercel.app" />
     <div class="cursor-inner" id="cursor-inner"></div>
     <div class="cursor-outer" id="cursor-outer"></div>
   </head>
