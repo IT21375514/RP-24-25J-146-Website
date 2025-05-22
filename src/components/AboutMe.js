@@ -1,5 +1,5 @@
 import meter1 from "../assets/img/my-image.jpg"; // Replace with your preferred image
-import colorSharp from "../assets/img/color-sharp.png";
+import colorSharp from "../assets/img/image (1).png";
 
 export const AboutMe = () => {
   const openURL = () => {
@@ -14,38 +14,42 @@ export const AboutMe = () => {
           <div className="col-12">
             <div className="about-me-bx wow zoomIn">
               <div className="row align-items-center">
-                {/* Left: Image */}
-                <div className="col-md-4">
-                  <div className="dp image-container">
-                    <img
-                      src={meter1}
-                      alt="About Me Image"
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
                 {/* Right: Text */}
-                <div className="col-md-8">
+                <div className="col-md-12">
                   <div className="text-container">
-                    <h2>About Me</h2>
+                    <h2>What is WriteWizard?</h2>
                     <p>
-                      I am an enthusiastic undergraduate pursuing a BSc Hons in
-                      Software Engineering, complemented by a Higher National
-                      Diploma in Information Technology. Proficient in MERN
-                      stack, Spring Boot, and .NET framework, I possess
-                      extensive knowledge in Object-Oriented Programming (OOP),
-                      Java, Kotlin, C#, JavaScript (JS), HTML, CSS, SQL,
-                      MongoDB, as well as expertise in SOLID principles and
-                      DevOps principles. My professional experience includes
-                      notable achievements in full-stack web development, entity
-                      management, customer connections, team collaboration, and
-                      project management.
+                      WriteWizard is an AI-powered, real-time collaborative
+                      document editing tool tailored for academic and research
+                      writing. It brings together intelligent citation
+                      generation, automated document formatting, semantic mind
+                      mapping, and expertise-driven contributor
+                      recommendations—all within a unified writing environment.
+                    </p>
+
+                    <p>
+                      The platform streamlines the academic writing process by
+                      addressing common pain points such as manual citation
+                      handling, inconsistent formatting, and scattered
+                      collaboration. With features like a contextual reference
+                      suggester, IEEE-compliant formatting converter, AI-based
+                      mind map visualizer, and contributor matching based on
+                      technical expertise, WriteWizard empowers student groups,
+                      educators, and researchers to focus on content creation
+                      instead of administrative overhead.
+                    </p>
+
+                    <p>
+                      Designed for the modern academic ecosystem, WriteWizard
+                      enhances productivity, ensures consistency, and fosters a
+                      more efficient, collaborative approach to scholarly
+                      documentation.
                     </p>
                   </div>
                   <div className="about-me-button-container d-flex">
                     <button
-                      className="resume-btn"
-                      id="resume-btn"
+                      className="website-btn"
+                      id="website-btn"
                       onClick={openURL}
                     >
                       <div className="sign">
@@ -54,7 +58,7 @@ export const AboutMe = () => {
                         </svg>
                       </div>
 
-                      <div className="text-resume">Resume</div>
+                      <div className="text-website">Open WriteWizard</div>
                     </button>
                   </div>
                 </div>

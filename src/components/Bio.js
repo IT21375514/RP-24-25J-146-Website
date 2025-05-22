@@ -4,7 +4,7 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
+import colorSharp from "../assets/img/image (1).png";
 import profile from "../assets/img/image-placeholder.png";
 import TrackVisibility from "react-on-screen";
 

@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import AnimationLottie from "../components/animation-lottie.js";
-import lottieFile from "../assets/animations/Animation - 1733593960114.json";
+import lottieFile from "../assets/lottie/document.json";
 import lottie from "lottie-web";
 
 export const Banner = () => {
@@ -15,11 +15,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Software Engineer",
-    "Web Developer",
-    "Web Designer",
-    "UI/UX Designer",
-    "Android Developer",
+    "Smarter Academic Writing for Research Teams",
   ];
   const period = 1000;
 
@@ -87,37 +83,32 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Welcome to the Future</span>
                   <article
                     id="hello-friend"
                     data-aos="fade-up"
                     data-aos-delay="0"
                   >
-                    <h1 className="jello">H</h1>
-                    <h1 className="jello">i</h1>
-                    <h1 className="jello">!</h1>
-                    <h1 className="jello">&nbsp;</h1>
-                    <h1 className="jello">I</h1>
-                    <h1 className="jello">'</h1>
-                    <h1 className="jello">m</h1>
-                    <h1 className="jello">&nbsp;</h1>
                     <span className="name-inline">
-                      <h1 className="jello">S</h1>
+                      <h1 className="jello">W</h1>
+                      <h1 className="jello">r</h1>
+                      <h1 className="jello">i</h1>
+                      <h1 className="jello">t</h1>
+                      <h1 className="jello">e</h1>
+                      <h1 className="jello">W</h1>
+                      <h1 className="jello">i</h1>
+                      <h1 className="jello">z</h1>
                       <h1 className="jello">a</h1>
-                      <h1 className="jello">n</h1>
-                      <h1 className="jello">j</h1>
-                      <h1 className="jello">a</h1>
-                      <h1 className="jello">y</h1>
-                      <h1 className="jello">a</h1>
-                      <h1 className="jello">n</h1>
+                      <h1 className="jello">r</h1>
+                      <h1 className="jello">d</h1>
                     </span>
                   </article>
 
-                  <h1>
+                  <h2>
                     <span className="txt-rotate">
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1>
+                  </h2>
                   <button
                     onClick={() => {
                       const element = document.getElementById("connect");
@@ -140,7 +131,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <AnimationLottie animationPath={lottieFile} />
+                  <AnimationLottie animationPath={lottieFile} speed={0.5} />
                 </div>
               )}
             </TrackVisibility>

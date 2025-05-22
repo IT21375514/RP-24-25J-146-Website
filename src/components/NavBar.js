@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/svg/sanjayan.svg";
+import logo from "../assets/svg/writewizard-logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -51,15 +51,26 @@ export const NavBar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#experience"
+                href="#milestones"
                 className={
-                  activeLink === "experience"
+                  activeLink === "milestones"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("experience")}
+                onClick={() => onUpdateActiveLink("milestones")}
               >
-                Experience
+                Milestones
+              </Nav.Link>
+              <Nav.Link
+                href="#documents"
+                className={
+                  activeLink === "documents"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("documents")}
+              >
+                Documents
               </Nav.Link>
               <Nav.Link
                 href="#projects"
@@ -76,25 +87,11 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://www.linkedin.com/in/sanjayan-c/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={navIcon1} alt="Sanjayan Linedin Profile" />
-                </a>
-                <a
                   href="https://github.com/IT21375514"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src={navIcon2} alt="Sanjayan GitHub Profile" />
-                </a>
-                <a
-                  href="https://www.instagram.com/l_o_l_l_y_g_a_g_201"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={navIcon3} alt="Sanjayan Instagram Profile" />
                 </a>
               </div>
               <div className="vvd-container">

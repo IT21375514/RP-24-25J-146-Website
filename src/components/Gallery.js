@@ -62,31 +62,25 @@ import clickcart8 from "../assets/img/click-cart/8.png";
 import clickcart9 from "../assets/img/click-cart/9.png";
 import clickcart10 from "../assets/img/click-cart/10.png";
 
-export const Projects = () => {
+export const Gallery = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const projects = [
+  const gallery = [
     {
-      title: "Astro Discover",
-      description: "React, Bootstrap and Firebase",
+      title: "Reference Suggestion & Citation Generator",
       imgUrl: astrodiscover0,
-      paragraph:
-        "Astro Discover is a Node.js project using React, Bootstrap, and Firebase for secure authentication and data storage. It integrates React Leaflet for interactive maps and React Slick for seamless carousels. The app offers an intuitive interface to explore NASA APIs, including the Astronomy Picture of the Day (APOD) and Earth Imagery. Users can view APOD details like date, explanation, and media type, and access satellite images by entering latitude, longitude, and date parameters.",
       gallery: [
         { src: astrodiscover0, alt: "Astro Discover" },
-        { src: astrodiscover1,alt: "Banner Section",},
+        { src: astrodiscover1, alt: "Banner Section" },
         { src: astrodiscover2, alt: "APOD Details" },
         { src: astrodiscover3, alt: "Earth Imagery" },
       ],
     },
     {
-      title: "EduMatrix",
-      description: "React, Spring Boot and MongoDB (Microservice)",
+      title: "IEEE Document Formatting",
       imgUrl: edumatrix0,
-      paragraph:
-        "EduMatrix is an online learning platform with a microservice architecture. Featuring roles for students, instructors, and admins, it offers a React-based web interface with a Spring Boot and MongoDB backend powered by RESTful APIs. Learners browse, enroll, and access courses, while instructors manage content and enrollments. Admins handle course approvals, payment gateway integration, and financial transactions, ensuring a robust and efficient learning ecosystem.",
       gallery: [
         { src: edumatrix0, alt: "EduMatrix" },
         { src: edumatrix1, alt: "Login" },
@@ -99,11 +93,8 @@ export const Projects = () => {
       ],
     },
     {
-      title: "TourARound",
-      description: "Kotlin (Android) and SQL",
+      title: "Mind Map Generation",
       imgUrl: touraround0,
-      paragraph:
-        "TourARound is an Android Kotlin project enhancing location-based experiences with augmented reality (AR). My contributions include location retrieval, navigation, emergency contact integration, AR views, translation, and object detection, enabling users to explore nearby locales effortlessly. Focused on efficiency and user engagement, TourARound sets new standards in location-based mobile applications with its advanced and user-friendly design.",
       gallery: [
         { src: touraround0, alt: "TourARound" },
         { src: touraround1, alt: "Splash Screen" },
@@ -112,11 +103,8 @@ export const Projects = () => {
       ],
     },
     {
-      title: "ClickCart",
-      description: "Java (Android), .Net and MongoDB",
+      title: "Contributor Suggestion System",
       imgUrl: clickcart0,
-      paragraph:
-        "ClickCart is an end-to-end e-commerce system with client-server architecture, featuring a mobile app for customers and a web app for back-office operations. Built using Java (Android), .NET for central web services, and MongoDB, it supports user, product, order, inventory, and vendor management. Customers can browse products, purchase, track orders, and provide vendor feedback, while the web app streamlines tasks, ensuring a seamless e-commerce experience.",
       gallery: [
         { src: clickcart0, alt: "ClickCart" },
         { src: clickcart1, alt: "Log In" },
@@ -129,56 +117,6 @@ export const Projects = () => {
         { src: clickcart8, alt: "My Orders List" },
         { src: clickcart9, alt: "Single My Order" },
         { src: clickcart10, alt: "My Comments List" },
-      ],
-    },
-    {
-      title: "GlobeCarry",
-      description: "Kotlin (Android) and SQL",
-      imgUrl: globecarry0,
-      paragraph:
-        "GlobeCarry is an Android Kotlin project revolutionizing cross-border logistics through peer-to-peer parcel delivery. My role focuses on enhancing user experience by spearheading a two-way communication system and managing secure, efficient connections between senders and travelers. I ensure safe, timely global parcel deliveries while advancing the project's mission to redefine international shipping with an intuitive, user-friendly platform.",
-      gallery: [
-        { src: globecarry0, alt: "GlobeCarry" },
-        { src: globecarry1, alt: "Log In" },
-        { src: globecarry2, alt: "Pending User Deliveries as Traveller" },
-        { src: globecarry3, alt: "Parcel Tracking" },
-        { src: globecarry4, alt: "Delivered User Deliveries as Traveller" },
-        { src: globecarry5, alt: "User Chats" },
-        { src: globecarry6, alt: "Two-Way Chat Communication" },
-        { src: globecarry7, alt: "Interactive Loading Screen" },
-      ],
-    },
-    {
-      title: "TicketEase",
-      description: "Kotlin (Android) and SQL",
-      imgUrl: ticketease0,
-      paragraph:
-        "TicketEase is an Android Kotlin project for dynamic transport management, addressing travelers', ticket inspectors', and project managers' needs. My contributions enhance the customer experience by refining user registration, integrating QR codes, managing virtual wallets, providing schedule access, and simplifying booking. TicketEase offers a robust, user-friendly platform, streamlining travel management and ensuring an efficient, user-centric solution for seamless transport.",
-      gallery: [
-        { src: ticketease0, alt: "TicketEase" },
-        { src: ticketease1, alt: "Sign Up" },
-        { src: ticketease2, alt: "My Bookings" },
-        { src: ticketease3, alt: "Virtual Wallet" },
-        { src: ticketease4, alt: "My Profile" },
-        { src: ticketease5, alt: "User QR Code" },
-        { src: ticketease6, alt: "Search and Bookings" },
-      ],
-    },
-    {
-      title: "Jarvis Entertainment",
-      description: ".NET, Bootstrap and SQL",
-      imgUrl: jarvis0,
-      paragraph:
-        "I led the development of Jarvis Entertainment, a .NET-based theater management system built with Bootstrap in Visual Studio. The platform streamlines ticket booking, show scheduling, canteen, parking, and employee management. My role included optimizing inventory management, resolving issues, and implementing dynamic reports, enhancing processes and ensuring a seamless customer experience with improved efficiency and service delivery.",
-      gallery: [
-        { src: jarvis0, alt: "Jarvis Entertainment" },
-        { src: jarvis1, alt: "Maintenance Home" },
-        { src: jarvis2, alt: "Inventory Item" },
-        { src: jarvis3, alt: "Monthly Financial Report" },
-        { src: jarvis4, alt: "Issue Reporting" },
-        { src: jarvis5, alt: "Issue Report Update" },
-        { src: jarvis6, alt: "Closed Maintenance Report" },
-        { src: jarvis7, alt: "New Maintenance Report" },
       ],
     },
   ];
@@ -194,7 +132,7 @@ export const Projects = () => {
   };
 
   return (
-    <section className="project py-5" id="projects">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -205,23 +143,22 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>Gallery</h2>
                   <p>
-                    Explore a curated collection showcasing my dedication to
-                    creativity and technical proficiency. From dynamic web
-                    designs to innovative mobile applications, each project
-                    serves as a testament to my passion for both front-end and
-                    back-end development.
+                    Welcome to our gallery. Here you’ll find snapshots that
+                    showcase the teamwork, creativity, and dedication behind
+                    WriteWizard. Each image tells a part of our story, from
+                    early sketches to the final product.
                   </p>
 
                   {/* Displaying all project cards directly */}
                   <Row className="mt-5">
-                    {projects.map((project, index) => {
+                    {gallery.map((gallery, index) => {
                       return (
                         <ProjectCard
                           key={index}
-                          {...project}
-                          onImageClick={() => handleImageClick(project.gallery)}
+                          {...gallery}
+                          onImageClick={() => handleImageClick(gallery.gallery)}
                         />
                       );
                     })}

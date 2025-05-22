@@ -3,11 +3,15 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
+import { ToolsandTechnologies } from "./components/ToolsandTechnologies";
 import { AboutMe } from "./components/AboutMe";
-import { Experience } from "./components/Experience";
-import { Education } from "./components/Education";
-import { Projects } from "./components/Projects";
+import { Domain }  from "./components/Domain";
+import { Milestone } from "./components/Milestone";
+import { CoreComponents } from "./components/CoreComponents";
+import { Documents } from "./components/Documents";
+import { Gallery } from "./components/Gallery";
+import { Conference } from "./components/Conference";
+import { Team } from "./components/Team";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
@@ -17,12 +21,15 @@ function App() {
       <NavBar />
       <Banner />
       <AboutMe />
-      <Experience />
-      <Education />
-      <Projects />
-      <Skills />
+      <Domain />
+      <Milestone />
+      <CoreComponents />
+      <Documents />
+      <Gallery />
+      <ToolsandTechnologies />
+      <Conference />
+      <Team />
       <Contact />
-      <Footer />
     </div>
   );
 }
