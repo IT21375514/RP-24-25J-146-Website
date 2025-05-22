@@ -1,30 +1,40 @@
-# Personal Portfolio Website in React
+# RP-24-25J-146-Website
 
-This project was built using:
+A React-based, Bootstrap-powered website for **WriteWizard**—an AI-driven collaborative academic writing platform.  
+This site showcases features like citation suggestions, IEEE formatting, mind-map generation, contributor recommendations, and more.
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+---
 
-In the /personal-portfolio, you can run:
+## Features
 
-### `npm start`
+- Reference suggestion & citation generator  
+- IEEE-compliant document formatting  
+- Hierarchical mind-map generation  
+- NLP-driven contributor recommendations  
+- Milestones timeline, team profiles, documents gallery  
+- Responsive layout & smooth animations  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React  
+- React-Bootstrap / Bootstrap 5  
+- AOS (Animate on Scroll)  
+- lottie-react  
+- react-icons  
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# clone the repo
+git clone git@github.com:IT21375514/RP-24-25J-146-Website.git
+cd RP-24-25J-146-Website
 
-### `npm run build`
+# install dependencies
+npm install
+# or
+yarn install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# start in development
+npm start
+# or
+yarn start
