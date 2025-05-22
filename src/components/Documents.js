@@ -8,28 +8,41 @@ const documentsData = [
   {
     category: "Project Proposals",
     items: [
-      { title: "Proposal-report-IT20132682", type: "pdf", url: "#" },
-      { title: "Proposal-report-IT2050874", type: "pdf", url: "#" },
-      { title: "Proposal-report-IT20072742", type: "pdf", url: "#" },
-      { title: "Proposal-report-IT20051648", type: "pdf", url: "#" },
+      { title: "Proposal-report-IT21194894", type: "pdf", url: "/documents/proposal/IT21194894_Research_Proposal_Report.pdf" },
+      { title: "Proposal-report-IT21375514", type: "pdf", url: "/documents/proposal/IT21375514_Research_Proposal_Report.pdf" },
+      { title: "Proposal-report-IT21375682", type: "pdf", url: "/documents/proposal/IT21375682_Research_Proposal Report.pdf" },
+      { title: "Proposal-report-IT21361036", type: "pdf", url: "/documents/proposal/IT21194894_Research_Proposal_Report" },
     ],
   },
   {
     category: "Proposal Presentations",
-    items: [{ title: "Proposal Presentation", type: "ppt", url: "#" }],
+    items: [{ title: "Proposal Presentation", type: "ppt", url: "/documents/proposal/Proposal_Presentation_24-25J-146.pptx" }],
   },
   {
-    category: "Status Documents",
+    category: "Progress Presentations 1",
+    items: [{ title: "Progress Presentation 1", type: "ppt", url: "/documents/pp1/Project_Presentation_1_24-25J-146.pptx" }],
+  },
+  {
+    category: "Progress Presentations 2",
+    items: [{ title: "Progress Presentation 2", type: "ppt", url: "/documents/pp2/Project_Presentation_2_24-25J-146.pptx" }],
+  },
+  {
+    category: "Final Reports",
     items: [
-      { title: "IT20132682-Status Document-1", type: "pdf", url: "#" },
-      { title: "IT20051648-Status Document-1", type: "pdf", url: "#" },
-      { title: "IT20072742-Status Document-1", type: "pdf", url: "#" },
-      { title: "IT2050874-Status Document-1", type: "pdf", url: "#" },
+      { title: "Group-Final Reports", type: "pdf", url: "/documents/final-reports/24_25J_146_Final Report.pdf" },
+      { title: "IT21194894-Final Reports", type: "pdf", url: "/documents/final-reports/IT21194894_Final Report.pdf" },
+      { title: "IT21375514-Final Reports", type: "pdf", url: "/documents/final-reports/IT21375514_Final Report.pdf" },
+      { title: "IT21375682-Final Reports", type: "pdf", url: "/documents/final-reports/IT21375682_Final Report.pdf" },
+      { title: "IT21361036-Final Reports", type: "pdf", url: "/documents/final-reports/IT21361036_Final Report.pdf" },
     ],
   },
+    {
+    category: "Research paper",
+    items: [{ title: "Research paper", type: "ppt", url: "/documents/Research paper/Writewizard Collaborative Document Editing Tool.pdf" }],
+  },
   {
-    category: "Progress Presentations",
-    items: [{ title: "Progress Presentation 1", type: "ppt", url: "#" }],
+    category: "Final Presentations 1",
+    items: [{ title: "Final Presentation", type: "ppt", url: "/documents/pp2/Project_Presentation_2_24-25J-146.pptx" }],
   },
 ];
 
@@ -64,6 +77,7 @@ export const Documents = () => (
                         variant="outline-primary"
                         href={doc.url}
                         className="documents-download-btn"
+                        download
                       >
                         <span>
                           <FaDownload />
