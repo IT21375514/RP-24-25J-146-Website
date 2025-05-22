@@ -1,40 +1,30 @@
-# RP-24-25J-146-Website
+# RP-24-25J-146 Website
 
-A React-based, Bootstrap-powered website for **WriteWizard**—an AI-driven collaborative academic writing platform.  
-This site showcases features like citation suggestions, IEEE formatting, mind-map generation, contributor recommendations, and more.
+This site presents **WriteWizard**, an AI-powered research project for collaborative academic writing. It showcases all aspects of the project—background, core components, milestones, team, documents, conference details, and more.
 
----
+## Sections
 
-## Features
-
-- Reference suggestion & citation generator  
-- IEEE-compliant document formatting  
-- Hierarchical mind-map generation  
-- NLP-driven contributor recommendations  
-- Milestones timeline, team profiles, documents gallery  
-- Responsive layout & smooth animations  
+- **Introduction & Domain** – project overview and research scope  
+- **Core Components** – citation suggester, IEEE formatting, mind-map generator, contributor matcher  
+- **Milestones** – timeline of project deliverables and evaluations  
+- **Team** – supervisor, co-supervisor, and student contributors  
+- **Documents** – proposals, presentations, status reports  
+- **Conference** – published paper and presentation details  
+- **Gallery** – visual snapshots of our development process  
 
 ## Tech Stack
 
-- React  
-- React-Bootstrap / Bootstrap 5  
-- AOS (Animate on Scroll)  
-- lottie-react  
-- react-icons  
+- **React**  
+- **Bootstrap 5** & **React-Bootstrap**  
+- **AOS** (scroll animations)  
+- **lottie-react** (interactive animations)  
+- **react-icons**  
+- **CSS Variables** for theming  
 
 ## Setup
 
 ```bash
-# clone the repo
 git clone git@github.com:IT21375514/RP-24-25J-146-Website.git
 cd RP-24-25J-146-Website
-
-# install dependencies
-npm install
-# or
-yarn install
-
-# start in development
-npm start
-# or
-yarn start
+npm install    # or yarn install
+npm start      # or yarn start
