@@ -28,7 +28,7 @@ export const Milestone = () => {
       iconBg: "#1e0030",
       date: "March 2023",
       points: [
-        "Presented to a panel of judges in order to provide an overview of the proposed research.",
+        "Presented the proposed research to a panel, covering key concepts, methodology, and expected outcomes.",
       ],
     },
     {
@@ -64,7 +64,7 @@ export const Milestone = () => {
       iconBg: "#1e0030",
       date: "June 2023",
       points: [
-        "Draft submission of the research paper submitted to the supervisor for evaluation.",
+        "Submitted a draft version of the research paper to the supervisor for feedback and preliminary evaluation.",
       ],
     },
     {
@@ -82,7 +82,7 @@ export const Milestone = () => {
       iconBg: "#1e0030",
       date: "September 2023",
       points: [
-        "Evaluation of 90% completion of the proposed solution by a panel of judges.",
+        "Demonstrated 90% project completion and presented progress to an evaluation panel.",
       ],
     },
     {

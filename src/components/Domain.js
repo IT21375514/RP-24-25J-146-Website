@@ -58,12 +58,10 @@ export const Domain = () => {
 
           {activeTab === "research-gap" && (
             <p className="domain-paragraph">
-              Most editing tools force you to switch between word processors,
-              citation managers, and collaboration suites—leading to errors,
-              context-loss, and wasted time. WriteWizard bridges this gap by
-              unifying intelligent features (citation suggestions, formatting
-              converters, mind maps, and contributor recommendations) under one
-              roof.
+              Traditional tools require constant switching between word processors, citation managers, 
+              and collaboration platforms—resulting in context loss, inefficiencies, and formatting errors. 
+              WriteWizard addresses this gap by seamlessly combining intelligent features like citation generation,
+              formatting conversion, mind map creation, and contributor recommendations in a single ecosystem.
             </p>
           )}
 
@@ -73,7 +71,7 @@ export const Domain = () => {
                 "Manual citation handling disrupts workflow and increases error rates.",
                 "Inconsistent formatting requires extensive post-editing and slows teams down.",
                 "Lack of semantic visualization makes it hard to grasp complex document structure.",
-                "Collaborator selection relies on ad-hoc methods rather than expertise matching.",
+                "Assigning collaborators often relies on guesswork instead of systematic expertise-based matching.",
               ].map((text, i) => (
                 <Col key={i}>
                   <Card className="domain-card h-100">
@@ -89,10 +87,10 @@ export const Domain = () => {
           {activeTab === "objectives" && (
             <Row className="domain-cards row-cols-2 row-cols-md-4 g-1 g-md-3">
               {[
-                "Implement automatic, context-aware IEEE citation generation.",
-                "Develop a transformer-based module for IEEE-compliant formatting.",
-                "Create a semantic mind map generator for hierarchical visualization.",
-                "Build an NLP-driven contributor recommendation engine based on expertise.",
+                "Develop an AI-driven system for automatic, context-aware IEEE citation generation.",
+                "Build a transformer-based module that converts informal academic drafts into IEEE-compliant formats.",
+                "Create a hierarchical mind map generator that visualizes academic content using semantic relationships.",
+                "Implement an NLP-based recommendation system to assign contributors based on domain-specific expertise.",
               ].map((text, i) => (
                 <Col key={i}>
                   <Card className="domain-card h-100">
