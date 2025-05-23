@@ -2,38 +2,68 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import nodeJs from "../assets/svg/node-js.svg";
 import reactJs from "../assets/svg/react.svg";
-import springBoot from "../assets/svg/spring-boot.svg";
-import dotNet from "../assets/svg/dot-net.svg";
-import kotlin from "../assets/svg/kotlin.svg";
-import java from "../assets/svg/java.svg";
-import cSharp from "../assets/svg/c-sharp.svg";
-import php from "../assets/svg/php.svg";
-import sql from "../assets/svg/sql.svg";
 import mongoDb from "../assets/svg/mongo-db.svg";
-import oop from "../assets/svg/object-oriented-programming.svg";
 import html from "../assets/svg/html.svg";
 import css from "../assets/svg/css.svg";
 import javascript from "../assets/svg/javascript.svg";
 import wordpress from "../assets/svg/wordpress.svg";
 import photoshop from "../assets/svg/photoshop.svg";
+import python from "../assets/svg/python.webp";
+import drawio from "../assets/svg/drawio.png"
+import figma from "../assets/svg/figma.png";
+import googleColab from "../assets/svg/google-colab.png";
+import huggingFace from "../assets/svg/huggingFace.png";
+import latex from "../assets/svg/latex.png"; 
+import msPlanner from "../assets/svg/msPlanner.jpg";
+import pandas from "../assets/svg/pandas.png";
+import postman from "../assets/svg/postman.png";
+import pytorch from "../assets/svg/pytorch.png";
+import tensorflow from "../assets/svg/tensorflow.png";
+import typescript from "../assets/svg/typescript.png";
+import unsloth from "../assets/svg/unsloth.jpg";
+import lora from "../assets/svg/lora.png";
+import postgresql from "../assets/svg/postgresql.png";
+import llama from "../assets/svg/llama.png";
+import numpy from "../assets/svg/numpy.png";
+import jupyterNotebook from "../assets/svg/jupyter-notebook.png";
 
 export const ToolsandTechnologies = () => {
   const toolsandTechnologies = [
-    { name: "Node Js", image: nodeJs },
-    { name: "React Js", image: reactJs },
-    { name: "Spring Boot", image: springBoot },
-    { name: ".Net", image: dotNet },
-    { name: "Kotlin", image: kotlin },
-    { name: "Java", image: java },
-    { name: "C#", image: cSharp },
-    { name: "PHP", image: php },
-    { name: "SQL", image: sql },
-    { name: "Mongo DB", image: mongoDb },
-    { name: "OOP", image: oop },
+    // 🧠 Languages & Core Technologies
+    { name: "Python", image: python },
+    { name: "JavaScript", image: javascript },
+    { name: "TypeScript", image: typescript },
     { name: "HTML", image: html },
     { name: "CSS", image: css },
-    { name: "JavaScript", image: javascript },
-    { name: "Wordpress", image: wordpress },
+    { name: "LaTeX", image: latex },
+
+    // ⚙️ Frameworks & Libraries
+    { name: "Node Js", image: nodeJs },
+    { name: "React Js", image: reactJs },
+    { name: "PyTorch", image: pytorch },
+    { name: "TensorFlow", image: tensorflow },
+    { name: "Pandas", image: pandas },
+    { name: "NumPy", image: numpy },
+    { name: "LoRA", image: lora },
+    { name: "Unsloth", image: unsloth },
+
+    // 🤖 AI / ML Platforms & Models
+    { name: "Hugging Face", image: huggingFace },
+    { name: "LLaMA", image: llama },
+
+    // 🗃️ Databases
+    { name: "Mongo DB", image: mongoDb },
+    { name: "PostgreSQL", image: postgresql },
+
+    // 🧪 Tools & Platforms
+    { name: "Jupyter Notebook", image: jupyterNotebook },
+    { name: "Google Colab", image: googleColab },
+    { name: "Postman", image: postman },
+    { name: "MS Planner", image: msPlanner },
+
+    // 🎨 Design & Visualization
+    { name: "Figma", image: figma },
+    { name: "draw.io", image: drawio },
     { name: "Photoshop", image: photoshop },
   ];
   
