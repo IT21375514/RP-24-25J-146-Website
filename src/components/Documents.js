@@ -36,9 +36,9 @@ const documentsData = [
       { title: "IT21361036-Final Reports", type: "pdf", url: "/documents/final-reports/IT21361036_Final Report.pdf" },
     ],
   },
-    {
+  {
     category: "Research paper",
-    items: [{ title: "Research paper", type: "ppt", url: "/documents/Research paper/Writewizard Collaborative Document Editing Tool.pdf" }],
+    items: [{ title: "Research paper", type: "pdf", url: "/documents/research-paper/Writewizard Collaborative Document Editing Tool.pdf" }],
   },
   {
     category: "Final Presentations 1",
