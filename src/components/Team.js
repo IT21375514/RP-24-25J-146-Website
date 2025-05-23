@@ -97,7 +97,7 @@ export const Team = () => (
                   }}
                 />
                 <div className="ms-3">
-                  <h5 className="card-title mb-1">{m.name}</h5>
+                  <h6 className="card-title mb-1">{m.name}</h6>
                   <p className="card-subtitle mb-2">{m.role}</p>
                   <div className="social-icon">
                     {m.links.map((link, li) => (

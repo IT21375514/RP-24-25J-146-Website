@@ -12,12 +12,12 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(300 - Math.random() * 50);
   const [index, setIndex] = useState(1);
   const toRotate = [
     "Smarter Academic Writing for Research Teams",
   ];
-  const period = 1000;
+  const period = 500;
 
   useEffect(() => {
     const lottieInstance = lottie.loadAnimation({
@@ -64,7 +64,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
@@ -104,11 +104,11 @@ export const Banner = () => {
                     </span>
                   </article>
 
-                  <h2>
-                    <span className="txt-rotate">
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h2>
+                  <h3>
+                    <h3 className="txt-rotate">
+                      <h3 className="wrap">{text}</h3>
+                    </h3>
+                  </h3>
                   <button
                     onClick={() => {
                       const element = document.getElementById("connect");

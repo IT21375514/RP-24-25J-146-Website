@@ -78,7 +78,7 @@ export const Domain = () => {
                 <Col key={i}>
                   <Card className="domain-card h-100">
                     <Card.Body>
-                      <Card.Text className="domain-card-text">{text}</Card.Text>
+                      <span className="domain-card-text">{text}</span>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -97,7 +97,7 @@ export const Domain = () => {
                 <Col key={i}>
                   <Card className="domain-card h-100">
                     <Card.Body>
-                      <Card.Text className="domain-card-text">{text}</Card.Text>
+                      <span className="domain-card-text">{text}</span>
                     </Card.Body>
                   </Card>
                 </Col>

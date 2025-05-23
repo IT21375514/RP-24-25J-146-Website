@@ -81,13 +81,13 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("projects")}
               >
-                Projects
+                Gallery
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://github.com/IT21375514"
+                  href="https://github.com/Krithiga-Balakrishnan/RP-24-25J-146"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

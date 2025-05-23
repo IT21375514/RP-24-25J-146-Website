@@ -63,7 +63,6 @@ export const ToolsandTechnologies = () => {
                 key={index}
                 className="skill-item mx-3 d-flex flex-column align-items-center justify-content-center p-3 rounded border border-secondary"
                 style={{
-                  background: "#15181f",
                   color: "#fff",
                   cursor: "pointer",
                   transition: "transform 0.3s, box-shadow 0.3s",

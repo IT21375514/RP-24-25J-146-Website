@@ -48,12 +48,12 @@ export const CoreComponents = () => {
               <Card className="components-card h-100 text-center">
                 <Card.Body>
                   <div className="components-icon mb-3">{c.icon}</div>
-                  <Card.Title className="components-card-title">
+                  <h5 className="components-card-title">
                     {c.title}
-                  </Card.Title>
-                  <Card.Text className="components-card-text">
+                  </h5>
+                  <span className="components-card-text">
                     {c.text}
-                  </Card.Text>
+                  </span>
                 </Card.Body>
               </Card>
             </Col>

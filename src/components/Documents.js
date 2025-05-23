@@ -40,9 +40,9 @@ export const Documents = () => (
 
       {documentsData.map((group, gi) => (
         <div key={gi} className="mb-5">
-          <div className="documents-category-bar text-center mb-3">
+          <h4 className="documents-category-bar text-center mb-3">
             {group.category}
-          </div>
+          </h4>
 
           <Row className="row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
             {group.items.map((doc, di) => (
@@ -56,9 +56,9 @@ export const Documents = () => (
                         <FaFilePowerpoint size={48} />
                       )}
                     </div>
-                    <Card.Title className="documents-card-title">
+                    <p className="documents-card-title">
                       {doc.title}
-                    </Card.Title>
+                    </p>
                     <div className="mt-auto">
                       <Button
                         variant="outline-primary"
