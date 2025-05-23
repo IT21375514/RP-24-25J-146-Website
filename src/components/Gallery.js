@@ -62,6 +62,15 @@ import clickcart8 from "../assets/img/click-cart/8.png";
 import clickcart9 from "../assets/img/click-cart/9.png";
 import clickcart10 from "../assets/img/click-cart/10.png";
 
+import contribute1 from "../assets/img/contributor-selection/0.png";
+import contribute2 from "../assets/img/contributor-selection/1.png";
+import contribute3 from "../assets/img/contributor-selection/2.png";
+import contribute4 from "../assets/img/contributor-selection/3.png";
+import contribute5 from "../assets/img/contributor-selection/4.png";
+import contribute6 from "../assets/img/contributor-selection/5.png"; 
+import contribute7 from "../assets/img/contributor-selection/6.png";
+import contribute8 from "../assets/img/contributor-selection/9.jpg";
+
 export const Gallery = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
@@ -104,19 +113,16 @@ export const Gallery = () => {
     },
     {
       title: "Contributor Suggestion System",
-      imgUrl: clickcart0,
+      imgUrl: contribute8,
       gallery: [
-        { src: clickcart0, alt: "ClickCart" },
-        { src: clickcart1, alt: "Log In" },
-        { src: clickcart2, alt: "Home Page" },
-        { src: clickcart3, alt: "Single Product Page" },
-        { src: clickcart4, alt: "Product Comments and Reviews" },
-        { src: clickcart5, alt: "Navigation Drawer" },
-        { src: clickcart6, alt: "Product Dynamic Filters" },
-        { src: clickcart7, alt: "Check Out" },
-        { src: clickcart8, alt: "My Orders List" },
-        { src: clickcart9, alt: "Single My Order" },
-        { src: clickcart10, alt: "My Comments List" },
+        { src: contribute1, alt: "ClickCart" },
+        { src: contribute2, alt: "Log In" },
+        { src: contribute3, alt: "Home Page" },
+        { src: contribute4, alt: "Single Product Page" },
+        { src: contribute5, alt: "Product Comments and Reviews" },
+        { src: contribute6, alt: "Navigation Drawer" },
+        { src: contribute7, alt: "Product Dynamic Filters" },
+
       ],
     },
   ];
