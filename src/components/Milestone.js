@@ -8,7 +8,7 @@ export const Milestone = () => {
       title: "Project Topic Assessment",
       marks: "No marks allocated",
       iconBg: "#1e0030",
-      date: "January 2023",
+      date: "July 2024",
       points: [
         "Initial topic assessment document of the proposed research was submitted for evaluation. The submitted document included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown.",
       ],
@@ -17,7 +17,7 @@ export const Milestone = () => {
       title: "Project Charter Submission",
       marks: "No marks allocated",
       iconBg: "#E6DEDD",
-      date: "January 2023",
+      date: "August 2024",
       points: [
         "Once the topic was finalized, the project charter document was submitted for evaluation. This document also included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown of the proposed research.",
       ],
@@ -26,7 +26,7 @@ export const Milestone = () => {
       title: "Project Proposal Presentation",
       marks: "Marks Allocation - 6%",
       iconBg: "#1e0030",
-      date: "March 2023",
+      date: "August 2024",
       points: [
         "Presented the proposed research to a panel, covering key concepts, methodology, and expected outcomes.",
       ],
@@ -35,7 +35,7 @@ export const Milestone = () => {
       title: "Project Proposal Report",
       marks: "Marks Allocation - 6%",
       iconBg: "#E6DEDD",
-      date: "March 2023",
+      date: "August 2024",
       points: [
         "The submission of a report which provides an in-depth analysis pertaining to key aspects of the proposed research along with the research problem, objectives, as well as the overall proposed solution.",
       ],
@@ -44,7 +44,7 @@ export const Milestone = () => {
       title: "Status Document 1",
       marks: "Marks Allocation - 1%",
       iconBg: "#1e0030",
-      date: "May 2023",
+      date: "August 2024",
       points: [
         "The submission of a document that provides an overview of key tasks conducted by members during the implementation phase of the research.",
       ],
@@ -53,7 +53,7 @@ export const Milestone = () => {
       title: "Progress Presentation 1",
       marks: "Marks Allocation - 15%",
       iconBg: "#E6DEDD",
-      date: "May 2023",
+      date: "December 2024",
       points: [
         "Evaluation of 50% completion of the proposed solution by a panel of judges.",
       ],
@@ -62,7 +62,7 @@ export const Milestone = () => {
       title: "Research Paper draft submission",
       marks: "Marks Allocation - 10%",
       iconBg: "#1e0030",
-      date: "June 2023",
+      date: "February 2025",
       points: [
         "Submitted a draft version of the research paper to the supervisor for feedback and preliminary evaluation.",
       ],
@@ -71,7 +71,7 @@ export const Milestone = () => {
       title: "Final Thesis Submission",
       marks: "Marks Allocation - 19%",
       iconBg: "#E6DEDD",
-      date: "September 2023",
+      date: "March 2025",
       points: [
         "Submission of the group and individual thesis documents for evaluation.",
       ],
@@ -80,32 +80,32 @@ export const Milestone = () => {
       title: "Progress Presentation 2",
       marks: "Marks Allocation - 18%",
       iconBg: "#1e0030",
-      date: "September 2023",
+      date: "March 2025",
       points: [
         "Demonstrated 90% project completion and presented progress to an evaluation panel.",
       ],
     },
-    {
-      title: "Log Book and Status Document 2",
-      marks: "Marks Allocation - 3%",
-      iconBg: "#E6DEDD",
-      date: "October 2023",
-      points: [
-        "Submission of the group and individual thesis documents for evaluation.Submission of the research logbook and status document 2 which provides an overview of all key tasks conducted by members during the implementation phase of the research.",
-      ],
-    },
+    // {
+    //   title: "Log Book and Status Document 2",
+    //   marks: "Marks Allocation - 3%",
+    //   iconBg: "#E6DEDD",
+    //   date: "October 2023",
+    //   points: [
+    //     "Submission of the group and individual thesis documents for evaluation.Submission of the research logbook and status document 2 which provides an overview of all key tasks conducted by members during the implementation phase of the research.",
+    //   ],
+    // },
     {
       title: "Website Assessment",
       marks: "Marks Allocation - 2%",
       iconBg: "#1e0030",
-      date: "November 2023",
+      date: "May 2025",
       points: ["Submission of research website for evaluation."],
     },
     {
       title: "Final Presentation and Viva",
       marks: "Marks Allocation - 20%",
       iconBg: "#E6DEDD",
-      date: "November 2023",
+      date: "May 2025",
       points: ["Final evaluation of the completed product(100%)."],
     },
   ];
