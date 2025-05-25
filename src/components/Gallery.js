@@ -5,19 +5,22 @@ import { ProjectCard } from "./ProjectCard";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-import astrodiscover0 from "../assets/img/astro-discover/0.png";
-import astrodiscover1 from "../assets/img/astro-discover/1.png";
-import astrodiscover2 from "../assets/img/astro-discover/2.png";
-import astrodiscover3 from "../assets/img/astro-discover/3.png";
+import astrodiscover0 from "../assets/img/reference/0.jpeg";
+import astrodiscover1 from "../assets/img/reference/1.jpeg";
+import astrodiscover2 from "../assets/img/reference/2.jpeg";
+import astrodiscover3 from "../assets/img/reference/3.jpeg";
+import astrodiscover4 from "../assets/img/reference/4.jpeg";
+import astrodiscover5 from "../assets/img/reference/5.jpeg";
 
-import edumatrix0 from "../assets/img/edu-matrix/0.png";
-import edumatrix1 from "../assets/img/edu-matrix/1.png";
-import edumatrix2 from "../assets/img/edu-matrix/2.png";
-import edumatrix3 from "../assets/img/edu-matrix/3.png";
-import edumatrix4 from "../assets/img/edu-matrix/4.png";
-import edumatrix5 from "../assets/img/edu-matrix/5.png";
-import edumatrix6 from "../assets/img/edu-matrix/6.png";
-import edumatrix7 from "../assets/img/edu-matrix/7.png";
+import edumatrix0 from "../assets/img/ieee-formater/homepad.PNG";
+import edumatrix1 from "../assets/img/ieee-formater/sidepanel.PNG";
+import edumatrix2 from "../assets/img/ieee-formater/output_paper.jpg";
+import edumatrix3 from "../assets/img/ieee-formater/0.jpeg";
+// import edumatrix3 from "../assets/img/edu-matrix/3.png";
+// import edumatrix4 from "../assets/img/edu-matrix/4.png";
+// import edumatrix5 from "../assets/img/edu-matrix/5.png";
+// import edumatrix6 from "../assets/img/edu-matrix/6.png";
+// import edumatrix7 from "../assets/img/edu-matrix/7.png";
 
 import mindmap0 from "../assets/img/mindmap-generator/mindmap-generator.png";
 import mindmap1 from "../assets/img/mindmap-generator/capture1.png";
@@ -43,26 +46,31 @@ export const Gallery = () => {
   const gallery = [
     {
       title: "Reference Suggestion & Citation Generator",
-      imgUrl: astrodiscover0,
+      imgUrl: astrodiscover5,
       gallery: [
-        { src: astrodiscover0, alt: "Astro Discover" },
-        { src: astrodiscover1, alt: "Banner Section" },
-        { src: astrodiscover2, alt: "APOD Details" },
-        { src: astrodiscover3, alt: "Earth Imagery" },
+       
+        { src: astrodiscover0, alt: "Manual Citation" },
+        { src: astrodiscover1, alt: "Manual Citation" },
+        { src: astrodiscover2, alt: "Pad page" },
+         { src: astrodiscover4, alt: "Add reference" },
+        { src: astrodiscover3, alt: "IEEE Citation" },
+       
       ],
     },
     {
       title: "IEEE Document Formatting",
-      imgUrl: edumatrix0,
+      imgUrl: edumatrix3,
       gallery: [
-        { src: edumatrix0, alt: "EduMatrix" },
-        { src: edumatrix1, alt: "Login" },
-        { src: edumatrix2, alt: "Home Page" },
-        { src: edumatrix3, alt: "Student Enrolled Course" },
-        { src: edumatrix4, alt: "Course Management by Faculty" },
-        { src: edumatrix5, alt: "Admin Panel" },
-        { src: edumatrix6, alt: "Admin Approval" },
-        { src: edumatrix7, alt: "Financial Transactions" },
+        
+        { src: edumatrix0, alt: "Home" },
+        { src: edumatrix1, alt: "Option" },
+        { src: edumatrix2, alt: "paper" },
+       // { src: edumatrix3, alt: "Home" },
+        // { src: edumatrix3, alt: "Student Enrolled Course" },
+        // { src: edumatrix4, alt: "Course Management by Faculty" },
+        // { src: edumatrix5, alt: "Admin Panel" },
+        // { src: edumatrix6, alt: "Admin Approval" },
+        // { src: edumatrix7, alt: "Financial Transactions" },
       ],
     },
     {

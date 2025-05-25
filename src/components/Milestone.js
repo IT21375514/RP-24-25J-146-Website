@@ -13,15 +13,15 @@ export const Milestone = () => {
         "Initial topic assessment document of the proposed research was submitted for evaluation. The submitted document included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown.",
       ],
     },
-    {
-      title: "Project Charter Submission",
-      marks: "No marks allocated",
-      iconBg: "#E6DEDD",
-      date: "August 2024",
-      points: [
-        "Once the topic was finalized, the project charter document was submitted for evaluation. This document also included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown of the proposed research.",
-      ],
-    },
+    // {
+    //   title: "Project Charter Submission",
+    //   marks: "No marks allocated",
+    //   iconBg: "#E6DEDD",
+    //   date: "August 2024",
+    //   points: [
+    //     "Once the topic was finalized, the project charter document was submitted for evaluation. This document also included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown of the proposed research.",
+    //   ],
+    // },
     {
       title: "Project Proposal Presentation",
       marks: "Marks Allocation - 6%",
@@ -40,15 +40,15 @@ export const Milestone = () => {
         "The submission of a report which provides an in-depth analysis pertaining to key aspects of the proposed research along with the research problem, objectives, as well as the overall proposed solution.",
       ],
     },
-    {
-      title: "Status Document 1",
-      marks: "Marks Allocation - 1%",
-      iconBg: "#1e0030",
-      date: "August 2024",
-      points: [
-        "The submission of a document that provides an overview of key tasks conducted by members during the implementation phase of the research.",
-      ],
-    },
+    // {
+    //   title: "Status Document 1",
+    //   marks: "Marks Allocation - 1%",
+    //   iconBg: "#1e0030",
+    //   date: "August 2024",
+    //   points: [
+    //     "The submission of a document that provides an overview of key tasks conducted by members during the implementation phase of the research.",
+    //   ],
+    // },
     {
       title: "Progress Presentation 1",
       marks: "Marks Allocation - 15%",

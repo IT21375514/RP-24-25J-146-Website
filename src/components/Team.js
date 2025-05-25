@@ -19,7 +19,7 @@ const teamMembers = [
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:supervisor@example.com" },
+      { icon: navIcon3, url: "krithigadb96@gmail.com" },
     ],
   },
   {
@@ -28,28 +28,28 @@ const teamMembers = [
     role: "Member",
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
-      { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:abilash@example.com" },
-    ],
-  },
-  {
-    img: member3,
-    name: "Shandeep. J",
-    role: "Member",
-    links: [
-      { icon: navIcon1, url: "https://linkedin.com/..." },
-      { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:danushan@example.com" },
+      { icon: navIcon2, url: "https://github.com/IT21375514" },
+      { icon: navIcon3, url: "sanjayan201@gmail.com" },
     ],
   },
   {
     img: member4,
+    name: "Shandeep. J",
+    role: "Member",
+    links: [
+      { icon: navIcon1, url: "https://linkedin.com/..." },
+      { icon: navIcon2, url: "https://github.com/IT21375682" },
+      { icon: navIcon3, url: "shandeep@gmail.com" },
+    ],
+  },
+  {
+    img: member3,
     name: "Saara M.K.F",
     role: "Member",
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:agash@example.com" },
+      { icon: navIcon3, url: "saara.kaizer@gmail.com" },
     ],
   },
   {
@@ -59,7 +59,7 @@ const teamMembers = [
     links: [
       { icon: navIcon1, url: "https://www.linkedin.com/in/lakmini-abeywardhana-65283aa9" },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:lakmini.d@sliit.lk" },
+      { icon: navIcon3, url: "lakmini.d@sliit.lk" },
     ],
   },
   {
@@ -69,7 +69,7 @@ const teamMembers = [
     links: [
       { icon: navIcon1, url: "https://lk.linkedin.com/in/karthiga-rajendran-6492b3171" },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:karthiga.r@sliit.lk" },
+      { icon: navIcon3, url: "karthiga.r@sliit.lk" },
     ],
   },
 ];
