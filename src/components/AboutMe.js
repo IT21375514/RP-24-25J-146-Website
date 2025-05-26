@@ -3,7 +3,7 @@ import colorSharp from "../assets/img/image (1).png";
 
 export const AboutMe = () => {
   const openURL = () => {
-    const url = require("../assets/cv/Sanjayan - CV.pdf"); // Ensure the file is in the correct path
+    const url = "http://98.70.36.206"; // Ensure the file is in the correct path
     window.open(url, "_blank");
   };
 
