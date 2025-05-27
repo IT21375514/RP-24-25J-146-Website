@@ -41,8 +41,8 @@ const documentsData = [
     items: [{ title: "Research paper", type: "pdf", url: "/documents/research-paper/Writewizard Collaborative Document Editing Tool.pdf" }],
   },
   {
-    category: "Final Presentations 1",
-    items: [{ title: "Final Presentation", type: "ppt", url: "/documents/pp2/Project_Presentation_2_24-25J-146.pptx" }],
+    category: "Final Presentations",
+    items: [{ title: "Final Presentation", type: "ppt", url: "/documents/final-presentation/Final_Project_Presentation_2_24-25J-146.pptx" }],
   },
 ];
 
