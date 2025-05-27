@@ -5,62 +5,38 @@ import { ProjectCard } from "./ProjectCard";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-import astrodiscover0 from "../assets/img/astro-discover/0.png";
-import astrodiscover1 from "../assets/img/astro-discover/1.png";
-import astrodiscover2 from "../assets/img/astro-discover/2.png";
-import astrodiscover3 from "../assets/img/astro-discover/3.png";
+import astrodiscover0 from "../assets/img/reference/0.jpeg";
+import astrodiscover1 from "../assets/img/reference/1.jpeg";
+import astrodiscover2 from "../assets/img/reference/2.jpeg";
+import astrodiscover3 from "../assets/img/reference/3.jpeg";
+import astrodiscover4 from "../assets/img/reference/4.jpeg";
+import astrodiscover5 from "../assets/img/reference/5.jpeg";
 
-import jarvis0 from "../assets/img/jarvis-entertainment/0.png";
-import jarvis1 from "../assets/img/jarvis-entertainment/1.png";
-import jarvis2 from "../assets/img/jarvis-entertainment/2.png";
-import jarvis3 from "../assets/img/jarvis-entertainment/3.png";
-import jarvis4 from "../assets/img/jarvis-entertainment/4.png";
-import jarvis5 from "../assets/img/jarvis-entertainment/5.png";
-import jarvis6 from "../assets/img/jarvis-entertainment/6.png";
-import jarvis7 from "../assets/img/jarvis-entertainment/7.png";
+import edumatrix0 from "../assets/img/ieee-formater/homepad.PNG";
+import edumatrix1 from "../assets/img/ieee-formater/sidepanel.PNG";
+import edumatrix2 from "../assets/img/ieee-formater/output_paper.jpg";
+import edumatrix3 from "../assets/img/ieee-formater/0.jpeg";
+// import edumatrix3 from "../assets/img/edu-matrix/3.png";
+// import edumatrix4 from "../assets/img/edu-matrix/4.png";
+// import edumatrix5 from "../assets/img/edu-matrix/5.png";
+// import edumatrix6 from "../assets/img/edu-matrix/6.png";
+// import edumatrix7 from "../assets/img/edu-matrix/7.png";
 
-import touraround0 from "../assets/img/tour-around/0.png";
-import touraround1 from "../assets/img/tour-around/1.png";
-import touraround2 from "../assets/img/tour-around/2.png";
-import touraround3 from "../assets/img/tour-around/3.png";
+import mindmap0 from "../assets/img/mindmap-generator/mindmap-generator.png";
+import mindmap1 from "../assets/img/mindmap-generator/capture1.png";
+import mindmap2 from "../assets/img/mindmap-generator/capture2.png";
+import mindmap3 from "../assets/img/mindmap-generator/capture3.png";
+import mindmap4 from "../assets/img/mindmap-generator/capture4.png";
 
-import ticketease0 from "../assets/img/ticket-ease/0.png";
-import ticketease1 from "../assets/img/ticket-ease/1.png";
-import ticketease2 from "../assets/img/ticket-ease/2.png";
-import ticketease3 from "../assets/img/ticket-ease/3.png";
-import ticketease4 from "../assets/img/ticket-ease/4.png";
-import ticketease5 from "../assets/img/ticket-ease/5.png";
-import ticketease6 from "../assets/img/ticket-ease/6.png";
-
-import globecarry0 from "../assets/img/globe-carry/0.png";
-import globecarry1 from "../assets/img/globe-carry/1.png";
-import globecarry2 from "../assets/img/globe-carry/2.png";
-import globecarry3 from "../assets/img/globe-carry/3.png";
-import globecarry4 from "../assets/img/globe-carry/4.png";
-import globecarry5 from "../assets/img/globe-carry/5.png";
-import globecarry6 from "../assets/img/globe-carry/6.png";
-import globecarry7 from "../assets/img/globe-carry/7.png";
-
-import edumatrix0 from "../assets/img/edu-matrix/0.png";
-import edumatrix1 from "../assets/img/edu-matrix/1.png";
-import edumatrix2 from "../assets/img/edu-matrix/2.png";
-import edumatrix3 from "../assets/img/edu-matrix/3.png";
-import edumatrix4 from "../assets/img/edu-matrix/4.png";
-import edumatrix5 from "../assets/img/edu-matrix/5.png";
-import edumatrix6 from "../assets/img/edu-matrix/6.png";
-import edumatrix7 from "../assets/img/edu-matrix/7.png";
-
-import clickcart0 from "../assets/img/click-cart/0.png";
-import clickcart1 from "../assets/img/click-cart/1.jpg";
-import clickcart2 from "../assets/img/click-cart/2.png";
-import clickcart3 from "../assets/img/click-cart/3.png";
-import clickcart4 from "../assets/img/click-cart/4.png";
-import clickcart5 from "../assets/img/click-cart/5.png";
-import clickcart6 from "../assets/img/click-cart/6.png";
-import clickcart7 from "../assets/img/click-cart/7.png";
-import clickcart8 from "../assets/img/click-cart/8.png";
-import clickcart9 from "../assets/img/click-cart/9.png";
-import clickcart10 from "../assets/img/click-cart/10.png";
+import contribute0 from "../assets/img/contributor-selection/contributor-selection.png";
+import contribute1 from "../assets/img/contributor-selection/0.png";
+import contribute2 from "../assets/img/contributor-selection/1.png";
+import contribute3 from "../assets/img/contributor-selection/2.png";
+import contribute4 from "../assets/img/contributor-selection/3.png";
+import contribute5 from "../assets/img/contributor-selection/4.png";
+import contribute6 from "../assets/img/contributor-selection/5.png"; 
+import contribute7 from "../assets/img/contributor-selection/6.png";
+import contribute8 from "../assets/img/contributor-selection/9.jpg";
 
 export const Gallery = () => {
   const [showModal, setShowModal] = useState(false);
@@ -70,53 +46,55 @@ export const Gallery = () => {
   const gallery = [
     {
       title: "Reference Suggestion & Citation Generator",
-      imgUrl: astrodiscover0,
+      imgUrl: astrodiscover5,
       gallery: [
-        { src: astrodiscover0, alt: "Astro Discover" },
-        { src: astrodiscover1, alt: "Banner Section" },
-        { src: astrodiscover2, alt: "APOD Details" },
-        { src: astrodiscover3, alt: "Earth Imagery" },
+       
+        { src: astrodiscover0, alt: "Manual Citation" },
+        { src: astrodiscover1, alt: "Manual Citation" },
+        { src: astrodiscover2, alt: "Pad page" },
+         { src: astrodiscover4, alt: "Add reference" },
+        { src: astrodiscover3, alt: "IEEE Citation" },
+       
       ],
     },
     {
       title: "IEEE Document Formatting",
-      imgUrl: edumatrix0,
+      imgUrl: edumatrix3,
       gallery: [
-        { src: edumatrix0, alt: "EduMatrix" },
-        { src: edumatrix1, alt: "Login" },
-        { src: edumatrix2, alt: "Home Page" },
-        { src: edumatrix3, alt: "Student Enrolled Course" },
-        { src: edumatrix4, alt: "Course Management by Faculty" },
-        { src: edumatrix5, alt: "Admin Panel" },
-        { src: edumatrix6, alt: "Admin Approval" },
-        { src: edumatrix7, alt: "Financial Transactions" },
+        
+        { src: edumatrix0, alt: "Home" },
+        { src: edumatrix1, alt: "Option" },
+        { src: edumatrix2, alt: "paper" },
+       // { src: edumatrix3, alt: "Home" },
+        // { src: edumatrix3, alt: "Student Enrolled Course" },
+        // { src: edumatrix4, alt: "Course Management by Faculty" },
+        // { src: edumatrix5, alt: "Admin Panel" },
+        // { src: edumatrix6, alt: "Admin Approval" },
+        // { src: edumatrix7, alt: "Financial Transactions" },
       ],
     },
     {
       title: "Mind Map Generation",
-      imgUrl: touraround0,
+      imgUrl: mindmap0,
       gallery: [
-        { src: touraround0, alt: "TourARound" },
-        { src: touraround1, alt: "Splash Screen" },
-        { src: touraround2, alt: "AR Nearest Location Detection" },
-        { src: touraround3, alt: "AR Navigation" },
+        { src: mindmap1, alt: "Mind Map Dashboard" },
+        { src: mindmap2, alt: "Generated Mind Map" },
+        { src: mindmap3, alt: "Saved Mind Map" },
+        { src: mindmap4, alt: "Generated Mind Mapfrom Document" },
       ],
     },
     {
       title: "Contributor Suggestion System",
-      imgUrl: clickcart0,
+      imgUrl: contribute0,
       gallery: [
-        { src: clickcart0, alt: "ClickCart" },
-        { src: clickcart1, alt: "Log In" },
-        { src: clickcart2, alt: "Home Page" },
-        { src: clickcart3, alt: "Single Product Page" },
-        { src: clickcart4, alt: "Product Comments and Reviews" },
-        { src: clickcart5, alt: "Navigation Drawer" },
-        { src: clickcart6, alt: "Product Dynamic Filters" },
-        { src: clickcart7, alt: "Check Out" },
-        { src: clickcart8, alt: "My Orders List" },
-        { src: clickcart9, alt: "Single My Order" },
-        { src: clickcart10, alt: "My Comments List" },
+        { src: contribute1, alt: "ClickCart" },
+        { src: contribute2, alt: "Log In" },
+        { src: contribute3, alt: "Home Page" },
+        { src: contribute4, alt: "Single Product Page" },
+        { src: contribute5, alt: "Product Comments and Reviews" },
+        { src: contribute6, alt: "Navigation Drawer" },
+        { src: contribute7, alt: "Product Dynamic Filters" },
+
       ],
     },
   ];

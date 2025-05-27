@@ -3,63 +3,63 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import member1 from "../assets/img/footer-bg-new.png";
-import member2 from "../assets/img/footer-bg-new.png";
-import member3 from "../assets/img/footer-bg-new.png";
-import member4 from "../assets/img/footer-bg-new.png";
-import member5 from "../assets/img/footer-bg-new.png";
-import member6 from "../assets/img/footer-bg-new.png";
+import navIcon3 from "../assets/img/email.svg";
+import member1 from "../assets/img/members/member1.png";
+import member2 from "../assets/img/members/member2.png";
+import member3 from "../assets/img/members/member3.png";
+import member4 from "../assets/img/members/member4.png";
+import member5 from "../assets/img/members/supervisor.png";
+import member6 from "../assets/img/members/sub-supervisor.png";
 
 const teamMembers = [
   {
     img: member1,
-    name: "Dr. Sanvitha Kasthuriarachchi",
-    role: "Supervisor",
+    name: "Krithiga Balakrishnan",
+    role: "Member",
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:supervisor@example.com" },
+      { icon: navIcon3, url: "krithigadb96@gmail.com" },
     ],
   },
   {
     img: member2,
-    name: "Abilash L.",
-    role: "Team Leader",
-    links: [
-      { icon: navIcon1, url: "https://linkedin.com/..." },
-      { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:abilash@example.com" },
-    ],
-  },
-  {
-    img: member3,
-    name: "Danushan R.",
+    name: "Sanjayan. C",
     role: "Member",
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
-      { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:danushan@example.com" },
+      { icon: navIcon2, url: "https://github.com/IT21375514" },
+      { icon: navIcon3, url: "sanjayan201@gmail.com" },
     ],
   },
   {
     img: member4,
-    name: "Agash V.",
+    name: "Shandeep. J",
+    role: "Member",
+    links: [
+      { icon: navIcon1, url: "https://linkedin.com/..." },
+      { icon: navIcon2, url: "https://github.com/IT21375682" },
+      { icon: navIcon3, url: "shandeep@gmail.com" },
+    ],
+  },
+  {
+    img: member3,
+    name: "Saara M.K.F",
     role: "Member",
     links: [
       { icon: navIcon1, url: "https://linkedin.com/..." },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:agash@example.com" },
+      { icon: navIcon3, url: "saara.kaizer@gmail.com" },
     ],
   },
   {
     img: member5,
-    name: "T. Abinaya",
-    role: "Member",
+    name: "Dr. Lakmini Abeywardhana",
+    role: "Supervisor",
     links: [
-      { icon: navIcon1, url: "https://linkedin.com/..." },
+      { icon: navIcon1, url: "https://www.linkedin.com/in/lakmini-abeywardhana-65283aa9" },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:abinaya@example.com" },
+      { icon: navIcon3, url: "lakmini.d@sliit.lk" },
     ],
   },
   {
@@ -67,9 +67,9 @@ const teamMembers = [
     name: "Ms. Karthiga Rajendran",
     role: "Co-Supervisor",
     links: [
-      { icon: navIcon1, url: "https://linkedin.com/..." },
+      { icon: navIcon1, url: "https://lk.linkedin.com/in/karthiga-rajendran-6492b3171" },
       { icon: navIcon2, url: "https://facebook.com/..." },
-      { icon: navIcon3, url: "mailto:karthiga@example.com" },
+      { icon: navIcon3, url: "karthiga.r@sliit.lk" },
     ],
   },
 ];
